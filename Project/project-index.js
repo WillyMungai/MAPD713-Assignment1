@@ -99,3 +99,8 @@ seneca.act('role:web', {
 
 let countGet=0;
 let countPost=0;
+
+var express = require('express');
+var app = express();
+app.use(require("body-parser").json())
+app.use(seneca.export('web'));
