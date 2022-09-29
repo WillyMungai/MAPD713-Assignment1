@@ -82,3 +82,20 @@ seneca.add('role:api, cmd:delete-all-products', function (args, done)
         done(err, msg);
     });
 });
+
+// Initiliazed express 
+seneca.act('role:web', {
+    use: {
+        prefix: '/productinventory',
+        pin: { role: 'api', cmd: '*' },
+        map: {
+            'add-product': { GET: true, POST: true },
+            'get-all-product': { GET: true },
+            'get-product': { GETT: true, },
+            'delete-product': { GET: true, }
+        }
+    }
+})
+
+let countGet=0;
+let countPost=0;
