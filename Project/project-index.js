@@ -108,7 +108,7 @@ app.use(seneca.export('web'));
 app.listen(3009)
 console.log("Server listening on localhost:3009 ...");
 console.log("----- Requests -------------------------");
-console.log("http://localhost:3009/productinventory/add-product?firstname=Peter&lastname=Doe&position=Developer");
+console.log("http://localhost:3009/productinventory/add-product?productname=laptop&productprice=500&productcartegory=Computer&productinventory=100productdescription= 32gbram, 512ssd");
 console.log("http://localhost:3009/productinventory/get-all-products");
 console.log("http://localhost:3009/productinventory/get-product?product_id=4567");
 console.log("http://localhost:3009/productinventory/delete-product?product_id=4567");
