@@ -104,3 +104,11 @@ var express = require('express');
 var app = express();
 app.use(require("body-parser").json())
 app.use(seneca.export('web'));
+
+app.listen(3009)
+console.log("Server listening on localhost:3009 ...");
+console.log("----- Requests -------------------------");
+console.log("http://localhost:3009/productinventory/add-product?firstname=Peter&lastname=Doe&position=Developer");
+console.log("http://localhost:3009/productinventory/get-all-products");
+console.log("http://localhost:3009/productinventory/get-product?product_id=4567");
+console.log("http://localhost:3009/productinventory/delete-product?product_id=4567");
