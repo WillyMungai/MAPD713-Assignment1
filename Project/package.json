@@ -1,0 +1,24 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "Node.js http server to store and retrieve product information",
+  "main": "index.js",
+  "scripts": 
+  {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Wilson",
+  "license": "ISC",
+
+  "dependencies": 
+  {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "debug": "^2.2.0",
+    "seneca": "^2.0.0",
+    "seneca-entity" : "^1.3.0",
+    "seneca-mongo-store": "^0.2.0",
+    "type-is": "1.6.10" 
+  }
+}
